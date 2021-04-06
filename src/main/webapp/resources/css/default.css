@@ -1,0 +1,197 @@
+body {
+    background-color: #ffffff;
+    font-size: 11pt;
+    font-family: Verdana;
+}
+
+a {
+    font-weight: bold;
+}
+
+.menu {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: silver;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+h2{
+   
+    color:white;
+    font-family:Courier New;
+}
+
+h1{ color:black;
+background-color: white !important;
+	}
+.user {
+    float: right;
+    position:relative;
+   
+}
+
+th {
+   
+    background-color:#ffeaea;
+     background-image: linear-gradient(#ff6a6a, #ffcece ,#ffeaea, white);
+    font-weight: bold;
+    color:black;
+}
+
+
+td {
+   
+    text-align: center;
+}
+.header {
+
+  background-image: linear-gradient(#ff6a6a, white);
+     color:black;
+     font-size:24pt;
+     font-weight: bold;
+     font-family: arial;
+     letter-spacing: 5pt;
+     text-align: center;
+     padding-top: 5px;
+     padding-bottom: 5px;
+     margin-bottom: 5px;
+     margin-top: 5px;
+}
+
+.reg , .rec{
+color:red;
+}
+
+ .But{
+            font-family: Roboto;
+            font-size: 16px;
+            line-height: 19px;
+            color: salmon;
+            padding: 6px 4px;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid rgb(165, 76, 67);
+        }    
+   
+    a: link{
+    color: white;}
+   
+    a:hover{
+    color:white;
+     font-style: oblique;
+     text-shadow: 1px 1px 2px red;
+     text-align: center;
+    cursor: pinter; }
+   
+    a:active{
+    color:red;
+    font-style: oblique;
+     text-shadow: 1px 1px 2px white;
+     text-align: center;
+    }
+
+
+.login-register-form-section {
+max-width: 350px;
+margin: 0 auto;
+}
+
+ 
+.login-register-form-section i {
+width: 10px;
+}.login-register-form-section .nav-tabs > li > a {
+color: #2abb9b;
+}
+ 
+.login-register-form-section .nav-tabs > li.active > a {
+background-color: #2abb9b;
+border-color: #2abb9b;
+color: white;
+}
+
+
+ 
+.login-register-form-section .nav-tabs > li > a,
+.login-register-form-section .nav-tabs > li.active > a {
+width: 160px;
+    text-align: center;
+    border-radius: 0;
+}
+
+ 
+.login-register-form-section .nav-tabs {
+padding-bottom: 10px;
+margin-bottom: 10px;
+}.login-register-form-section .btn-custom {
+width: 100%;
+background-color: #2abb9b;
+border-color: #2abb9b;
+margin-bottom: 0.5em;
+border-radius: 0;
+}
+ 
+.login-register-form-section .btn-custom:hover {
+width: 100%;
+background-color: #48A497;
+border-color: #2abb9b;
+}.login-register-form-section .form-group {
+padding: 0 20px;
+}
+.tab1 {
+    width: 320px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    border-top: 5px solid #ff656c;
+    margin: 0 auto;
+}
+
+.tab1{ border-top: 5px solid #ff656c;}
+.tab1 h1 {
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.tab1 input {
+    width: 100%;
+    height: 42px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-family: Montserrat;
+    padding: 0 20px 0 50px;
+    outline: none;
+}
+.tab1 input:active, .tab1 input:focus {
+    border: 1px solid #ff656c;
+}
+
+ .button1{
+     width: 320px;
+    height: 40px;
+    background: #ff656c;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ddcadb;
+    color: black;
+     background: url('https://images.unsplash.com/photo-1516541196182-6bdb0516ed27?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80') no-repeat fixed center center;
+    background-size: cover;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Montserrat;
+    outline: none;
+    cursor: pointer;
+}
+
+.button1:hover {
+ 
+    border: 1px solid #ff656c;
+}

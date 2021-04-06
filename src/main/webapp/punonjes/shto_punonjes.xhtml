@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://java.sun.com/jsf/passthrough"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+	<ui:define name="title">Shto punonjes te ri</ui:define>
+<h:head>
+
+<link
+href='http://fonts.googleapis.com/css?family=Montserrat:400,700'
+rel='stylesheet' type='text/css' />
+<!-- DatePicker JavaScript & CSS -->
+<script type="text/javascript" src="https://examples.javacodegeeks.com/wp-content/litespeed/localres/code.jquery.com/jquery-1.12.4.js" />
+<script type="text/javascript" src="https://examples.javacodegeeks.com/wp-content/litespeed/localres/code.jquery.com/ui/1.12.1/jquery-ui.js" />
+<link rel="stylesheet" href="https://examples.javacodegeeks.com/wp-content/litespeed/localres/code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+  <h:outputScript library="js" name="jquery.js" />
+</h:head>
+	
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+
+		<fieldset title="User Details">
+			<legend>
+				<b>Provide Information</b>
+			</legend>
+			<h:form prependId="false">
+			
+            	Emer 
+                <br />
+				<h:inputText id="name" value="#{punonjes.emer}" p:required="true"
+					p:placeholder="Name" />
+				<p />
+                Mbiemri
+                <br />
+				<h:inputText id="lastname" value="#{punonjes.mbiemer}"
+					p:required="true" p:placeholder="mbiemer" />
+				<p />
+				<br /> 
+		        Pozicion 
+                <br />
+                <h:selectOneMenu value="#{punonjes.pozicion}">
+					<f:selectItem itemValue="A" itemLabel="Doctor" />
+					<f:selectItem itemValue="B" itemLabel="Infermier" />
+					<f:selectItem itemValue="C" itemLabel="Sanitar" />
+				</h:selectOneMenu>
+				<p />
+				<br /> 
+		         Paga per ore
+                <br />
+				<h:inputText id="pagaore" value="#{punonjes.paga_ore}"
+					p:required="true" p:placeholder="lastname" />
+				<p />
+				<br /> 
+		        Data e rregjistrimi: 
+                <div class="form-group">
+			<h:outputLabel value="Data" />
+			<div class="col-sm-10">
+				<h:inputText value="#{punonjes.data_fillimi}"
+					 />
+					 
+			</div>
+			
+			</div>
+			     <br/>  
+                <h:commandButton  value="Rregjistro" action="#{punonjes.savePunonjes()}" />
+                <br/>
+				<br />
+				<h:outputText value="#{punonjes.message}" />
+			</h:form>
+		</fieldset>
+
+
+</ui:composition>

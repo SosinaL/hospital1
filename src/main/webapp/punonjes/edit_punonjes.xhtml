@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml" 
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+               
+                xmlns:p="http://java.sun.com/jsf/passthrough"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f = "http://java.sun.com/jsf/core">
+<head>
+	<ui:define name="title">
+       
+         <h:outputStylesheet library="css" name="bootstrap.min.css"/>
+    </ui:define>
+  </head>
+    <br></br> <br></br> <br></br>
+    <br></br> <br></br> <br></br>
+      
+       
+            <h:form prependId="false">
+            <div class="tab1">
+<h1>Update Profile</h1>
+           
+        	
+                
+            	Emer 
+                <br/>
+                <h:inputText  id="name" value="#{punonjes.emer}" 
+                              required="true" placeholder="Name" />
+                <p/>
+                Mbiemer 
+                <br/>
+                <h:inputText  id="lastname" value="#{punonjes.mbiemer}" 
+                              required="true" placeholder="Lastname" />
+                <p/>
+                Pozicion
+                <br/>
+                <h:inputText  id="fullname" value="#{punonjes.pozicion}"
+                              placeholder="Pozicion"  
+                              required="true"  />
+                <p/>
+                Data fillimit
+                <br/>
+                <h:inputText  id="username" value="#{punonjes.date}"
+                              placeholder="Username"  
+                              required="true"
+                              type="date"  />
+                <p/>
+                Paga per ore 
+                <br/>
+                <h:inputText  id="email" value="#{punonjes.paga_ore}" 
+                              required="true"
+                              placeholder="Paga_ore"  
+                               />
+                <p/>
+                Paga
+                <br/>
+                <h:inputText  id="paga" value="#{punonjes.paga}" 
+                              required="true"
+                              placeholder="Paga" />
+                <p/>
+               
+		        <br/>
+		        <br/>
+                <h:commandButton class="button1" value="Edit" action="#{punonjes.editPunonjes(punonjes_id)}" />
+                <br/>
+                <h:outputText value="#{punonjes.message}" />
+          </div>
+            </h:form>
+        
+</ui:composition>
+

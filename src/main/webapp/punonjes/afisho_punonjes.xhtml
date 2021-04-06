@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:f = "http://java.sun.com/jsf/core"
+                xmlns:p="http://java.sun.com/jsf/passthrough"
+                xmlns:h="http://java.sun.com/jsf/html">
+
+<ui:define name="title"> Afisho punonjes
+       
+         <h:outputStylesheet library="css" name="bootstrap.min.css"/>
+    </ui:define>
+    
+   
+        
+       
+            <h:form prependId="false">
+            <div class="tab1">
+
+           
+            Emer:
+                <br/>
+                <h:inputText  id="name" value="#{punonjes.emer}"
+                  required="true" p:placeholder="Emer" />
+                <p/>
+                Mbiemer:
+                <br/>
+                <h:inputText  id="mbiemer" value="#{punonjes.mbiemer}"
+                       required="true" p:placeholder="Mbiemer" />
+                <p/>
+               Pozicioni:
+                <br/>
+                <h:inputText  id="fullname" value="#{punonjes.pozicion}"
+                              p:placeholder="pozicioni"  
+                  required="true"  />
+                <p/>
+                Paga per ore:
+                <br/>
+                <h:inputText  id="paga_ore" value="#{punonjes.paga_ore}"
+                              p:required="true"
+                              p:placeholder="paga per ore"  
+                               />
+               Data e rregjistrimi:
+                <br/>
+                <h:inputText  id="data" value="#{punonjes.date}"
+                              p:required="true"
+                              p:placeholder="Data e fillimit"  
+                               />
+               <p/>
+                Oret e punes:
+                <br/>
+                <h:inputText  id="orepune" value="#{punonjes.ore_pune}"
+                              p:placeholder="Oret e punes"  
+                              />
+                <p/>
+                Paga:
+                <br/>
+                <h:inputText  id="paga" value="#{punonjes.paga}"
+                              p:placeholder="Oret e punes"  
+                              />
+                <p/>
+                <h:commandButton class="button1" value="Update" action="#{punonjes.edit(a.punonjes_id)}" />
+                 
+                    <f:facet name="header">Delete</f:facet>
+                    <h:commandButton class=" button1" action = "#{punonjes.checkPunonjes(a.punonjes_id)}" value="Delete" > 
+                    </h:commandButton>
+                <br/>
+               
+                </div>
+            </h:form>
+     
+
+</ui:composition>
